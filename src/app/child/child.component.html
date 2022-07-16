@@ -1,0 +1,11 @@
+<div>
+  <span>
+    Movies list in childComponent
+  </span>
+  <li *ngFor="let movie of movies$ | async">
+    <h1>
+      {{movie.name}}
+    </h1>
+    <h2>{{movie.author}}</h2>
+  </li>
+</div>
